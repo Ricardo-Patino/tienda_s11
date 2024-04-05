@@ -9,6 +9,7 @@ com\tienda\dao\ProductoDao.class
 com\tienda\service\impl\CategoriaServiceImpl.class
 com\tienda\service\impl\FirebaseStorageServiceImpl.class
 com\tienda\controller\PruebasController.class
+com\tienda\service\impl\CorreoServiceImpl.class
 com\tienda\domain\Rol.class
 com\tienda\service\FirebaseStorageService.class
 com\tienda\service\UsuarioDetailsService.class
@@ -22,7 +23,6 @@ com\tienda\service\impl\UsuarioDetailsServiceImpl.class
 com\tienda\service\CorreoService.class
 com\tienda\service\impl\ProductoServiceImpl.class
 com\tienda\controller\ProductoController.class
-com\tienda\service\impl\CorreoServiceImp.class
 com\tienda\controller\RegistroController.class
 com\tienda\service\ProductoService.class
 com\tienda\domain\Usuario.class
