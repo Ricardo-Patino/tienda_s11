@@ -87,7 +87,7 @@
                                             <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/categoria/eliminar/}+${categoria.idCategoria}"
                                                    class="btn btn-danger">
                                                     <i class="fas fa-trash"></i> [[#{accion.eliminar}]]</a>
-                                                <a th:href="@{/categoria/modificar/}+${categoria.idCategoria}"
+                                                <a th:href="@{/categoria/modifica/}+${categoria.idCategoria}"
                                                    class="btn btn-success">
                                                     <i class="fas fa-pencil"></i> [[#{accion.actualizar}]]</a></td></tr>
                                     </tbody>

@@ -31,7 +31,7 @@ import org.springframework.stereotype.Service;
 public class ReporteServiceImpl implements ReporteService {
 
     @Autowired
-    DataSource datasource;
+    DataSource datasource; //plugin de MySQL
     
     @Override
     public ResponseEntity<Resource> generaReporte(String reporte, Map<String, Object> parametros, String tipo) throws IOException {
@@ -45,10 +45,8 @@ public class ReporteServiceImpl implements ReporteService {
             }
 
             String reportePath = "reportes";
-
             
             ByteArrayOutputStream salida = new ByteArrayOutputStream();
-
 
             ClassPathResource fuente
                     = new ClassPathResource(
@@ -57,9 +55,7 @@ public class ReporteServiceImpl implements ReporteService {
                             + reporte
                             + ".jasper");            
 
-
             InputStream elReporte = fuente.getInputStream();
-
 
             var reporteJasper
                     = JasperFillManager
